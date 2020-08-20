@@ -1,0 +1,570 @@
+<html>
+<head>
+	<style>
+		table, td {
+		border: 1px solid black;
+		width 10px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+	<tr>
+	<td><canvas width = "50" height="50" id="Wall"name="1"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="2"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="3"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="4"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="5"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="6"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="7"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="8"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="9"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="10"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="11"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="12"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="13"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="14"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="15"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="16"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="17"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="18"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="19"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="20"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="21"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="22"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="23"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="24"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="25"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="26"onclick="createWallNode(26)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="27"onclick="createWallNode(27)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="28"onclick="createWallNode(28)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="29"onclick="createWallNode(29)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="30"onclick="createWallNode(30)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="31"onclick="createWallNode(31)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="32"onclick="createWallNode(32)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="33"onclick="createWallNode(33)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="34"onclick="createWallNode(34)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="35"onclick="createWallNode(35)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="36"onclick="createWallNode(36)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="37"onclick="createWallNode(37)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="38"onclick="createWallNode(38)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="39"onclick="createWallNode(39)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="40"onclick="createWallNode(40)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="41"onclick="createWallNode(41)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="42"onclick="createWallNode(42)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="43"onclick="createWallNode(43)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="44"onclick="createWallNode(44)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="45"onclick="createWallNode(45)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="46"onclick="createWallNode(46)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="47"onclick="createWallNode(47)"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="48"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="49"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="50"onclick="createWallNode(50)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="51"onclick="createWallNode(51)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="52"onclick="createWallNode(52)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="53"onclick="createWallNode(53)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="54"onclick="createWallNode(54)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="55"onclick="createWallNode(55)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="56"onclick="createWallNode(56)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="57"onclick="createWallNode(57)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="58"onclick="createWallNode(58)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="59"onclick="createWallNode(59)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="60"onclick="createWallNode(60)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="61"onclick="createWallNode(61)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="62"onclick="createWallNode(62)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="63"onclick="createWallNode(63)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="64"onclick="createWallNode(64)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="65"onclick="createWallNode(65)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="66"onclick="createWallNode(66)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="67"onclick="createWallNode(67)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="68"onclick="createWallNode(68)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="69"onclick="createWallNode(69)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="70"onclick="createWallNode(70)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="71"onclick="createWallNode(71)"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="72"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="73"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="74"onclick="createWallNode(74)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="75"onclick="createWallNode(75)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="76"onclick="createWallNode(76)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="77"onclick="createWallNode(77)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="78"onclick="createWallNode(78)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="79"onclick="createWallNode(79)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="80"onclick="createWallNode(80)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="81"onclick="createWallNode(81)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="82"onclick="createWallNode(82)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="83"onclick="createWallNode(83)"></td>
+	<<td><canvas width = "50" height="50"id="Empty"name="84"onclick="createWallNode(84)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="85"onclick="createWallNode(85)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="86"onclick="createWallNode(86)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="87"onclick="createWallNode(87)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="88"onclick="createWallNode(88)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="89"onclick="createWallNode(89)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="90"onclick="createWallNode(90)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="91"onclick="createWallNode(91)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="92"onclick="createWallNode(92)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="93"onclick="createWallNode(93)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="94"onclick="createWallNode(94)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="95"onclick="createWallNode(95)"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="96"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="97"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="98"onclick="createWallNode(98)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="99"onclick="createWallNode(99)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="100"onclick="createWallNode(100)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="101" onclick="createWallNode(101)"></td>
+    <td><canvas width = "50" height="50"  id="Empty"name="102"onclick="createWallNode(102)"></td>
+	<td><canvas width = "50" height="50"  id="Empty"name="103"onclick="createWallNode(103)"></td>
+	<td><canvas width = "50" height="50"  id="Empty"name="104"onclick="createWallNode(104)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="105"onclick="createWallNode(105)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="106"onclick="createWallNode(106)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="107"onclick="createWallNode(107)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="108"onclick="createWallNode(108)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="109"onclick="createWallNode(109)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="110"onclick="createWallNode(110)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="111"onclick="createWallNode(111)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="112"onclick="createWallNode(112)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="113"onclick="createWallNode(113)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="114"onclick="createWallNode(114)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="115"onclick="createWallNode(115)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="116"onclick="createWallNode(116)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="117"onclick="createWallNode(117)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="118"onclick="createWallNode(118)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="119"onclick="createWallNode(119)"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="120"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="121"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="122"onclick="createWallNode(122)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="123"onclick="createWallNode(123)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="124"onclick="createWallNode(124)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="125"onclick="createWallNode(125)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="126"onclick="createWallNode(126)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="127"onclick="createWallNode(127)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="128"onclick="createWallNode(128)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="129"onclick="createWallNode(129)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="130"onclick="createWallNode(130)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="131"onclick="createWallNode(131)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="132"onclick="createWallNode(132)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="133"onclick="createWallNode(133)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="134"onclick="createWallNode(134)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="135"onclick="createWallNode(135)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="136"onclick="createWallNode(136)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="137"onclick="createWallNode(137)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="138"onclick="createWallNode(138)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="139"onclick="createWallNode(139)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="140"onclick="createWallNode(140)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="141"onclick="createWallNode(141)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="142"onclick="createWallNode(142)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="143"onclick="createWallNode(143)"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="144"></td>
+  </tr>
+   <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="145"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="146" onclick="createWallNode(146)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="147"onclick="createWallNode(147)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="148"onclick="createWallNode(148)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="149"onclick="createWallNode(149)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="150"onclick="createWallNode(150)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="151"onclick="createWallNode(151)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="152"onclick="createWallNode(152)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="153"onclick="createWallNode(153)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="154"onclick="createWallNode(154)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="155" onclick="createWallNode(155)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="156"onclick="createWallNode(156)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="157"onclick="createWallNode(157)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="158"onclick="createWallNode(158)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="159"onclick="createWallNode(159)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="160"onclick="createWallNode(160)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="161"onclick="createWallNode(161)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="162"onclick="createWallNode(162)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="163" onclick="createWallNode(163)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="164" onclick="createWallNode(164)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="165"onclick="createWallNode(165)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="166"onclick="createWallNode(166)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="167"onclick="createWallNode(167)"></td>
+	<td><canvas width = "50" height="50" id="Wall" name="168"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="169"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="170"onclick="createWallNode(170)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="171"onclick="createWallNode(171)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="172"onclick="createWallNode(172)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="173" onclick="createWallNode(173)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="174"onclick="createWallNode(174)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="175"onclick="createWallNode(175)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="176"onclick="createWallNode(176)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="177"onclick="createWallNode(177)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="178"onclick="createWallNode(178)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="179"onclick="createWallNode(179)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="180"onclick="createWallNode(180)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="181"onclick="createWallNode(181)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="182" onclick="createWallNode(182)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="183"onclick="createWallNode(183)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="184"onclick="createWallNode(184)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="185"onclick="createWallNode(185)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="186"onclick="createWallNode(186)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="187"onclick="createWallNode(187)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="188"onclick="createWallNode(188)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="189"onclick="createWallNode(189)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="190"onclick="createWallNode(190)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="191" onclick="createWallNode(191)"></td>
+	<td><canvas width = "50" height="50" id="Wall" name="192"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="193"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="194"onclick="createWallNode(194)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="195"onclick="createWallNode(195)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="196"onclick="createWallNode(196)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="197"onclick="createWallNode(197)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="198"onclick="createWallNode(198)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="199"onclick="createWallNode(199)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="200" onclick="createWallNode(200)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="201"onclick="createWallNode(201)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="202"onclick="createWallNode(202)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="203"onclick="createWallNode(203)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="204"onclick="createWallNode(204)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="205"onclick="createWallNode(205)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="206"onclick="createWallNode(206)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="207"onclick="createWallNode(207)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="208"onclick="createWallNode(208)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="209" onclick="createWallNode(209)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="210"onclick="createWallNode(210)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="211"onclick="createWallNode(211)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="212"onclick="createWallNode(212)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="213"onclick="createWallNode(213)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="214"onclick="createWallNode(214)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="215"onclick="createWallNode(215)"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="216"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="217"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="218" onclick="createWallNode(218)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="219"onclick="createWallNode(219)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="220"onclick="createWallNode(220)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="221"onclick="createWallNode(221)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="222"onclick="createWallNode(222)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="223"onclick="createWallNode(223)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="224"onclick="createWallNode(224)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="225"onclick="createWallNode(225)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="226"onclick="createWallNode(226)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="227" onclick="createWallNode(227)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="228"onclick="createWallNode(228)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="229"onclick="createWallNode(229)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="230"onclick="createWallNode(230)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="231"onclick="createWallNode(231)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="232"onclick="createWallNode(232)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="233"onclick="createWallNode(233)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="234"onclick="createWallNode(234)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="235"onclick="createWallNode(235)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="236" onclick="createWallNode(236)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="237"onclick="createWallNode(237)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="238"onclick="createWallNode(238)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="239"onclick="createWallNode(239)"></td>
+	<td><canvas width = "50" height="50" id="Wall" name="240"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="241"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="242"onclick="createWallNode(242)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="243"onclick="createWallNode(243)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="244"onclick="createWallNode(244)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="245" onclick="createWallNode(245)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="246"onclick="createWallNode(246)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="247"onclick="createWallNode(247)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="248"onclick="createWallNode(248)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="249"onclick="createWallNode(249)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="250"onclick="createWallNode(250)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="251"onclick="createWallNode(251)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="252"onclick="createWallNode(252)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="253"onclick="createWallNode(253)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="254" onclick="createWallNode(254)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="255"onclick="createWallNode(255)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="256"onclick="createWallNode(256)"></td>
+    <td><canvas width = "50" height="50" id="Empty"name="257"onclick="createWallNode(257)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="258"onclick="createWallNode(258)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="259"onclick="createWallNode(259)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="260"onclick="createWallNode(260)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="261"onclick="createWallNode(261)"></td>
+	<td><canvas width = "50" height="50" id="Empty" name="262"onclick="createWallNode(262)"></td>
+	<td><canvas width = "50" height="50" id="Empty"name="263" onclick="createWallNode(263)"></td>
+	<td><canvas width = "50" height="50" id="Wall" name="264"></td>
+  </tr>
+  <tr>
+	<td><canvas width = "50" height="50" id="Wall"name="265"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="266"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="267"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="268"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="269"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="270"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="271"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="272"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="273"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="274"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="275"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="276"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="277"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="278"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="279"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="280"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="281"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="282"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="283"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="284"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="285"></td>
+    <td><canvas width = "50" height="50" id="Wall"name="286"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="287"></td>
+	<td><canvas width = "50" height="50" id="Wall"name="288"></td>
+  </tr>
+ </table>
+ <br>
+ <input type="button" id="findpath"value="Find Path" onclick="findPath()">
+ <input type="button" id="restart"value="Restart" onclick="restart()">
+ <script>
+	
+	// global variables 
+	var name;
+	var currentSquare;
+	var potentialSquare;
+	var findPathEvent=false;
+	var algorithim;
+	var canvas,context;
+	var startSquare,endSquare;
+	var squaresLeft;
+	var noPath=false;
+	
+	const findPathBtn = document.getElementById("findpath");
+	
+	function init(){
+		
+		updateScreen();
+	}
+	
+	function restart(){
+		location.reload();
+	}
+
+	function createWallNode(square){
+		
+		if(!findPathEvent){
+		
+			canvas = document.getElementsByName(square.toString())[0];
+			context = canvas.getContext('2d');
+			
+			// square is empty
+			if(document.getElementsByName(square.toString())[0].id == "Empty"){
+				context.fillStyle="grey";
+				context.fillRect(0,0,canvas.width,canvas.height);
+				canvas.id="Wall";
+			}
+			
+			// square has a wall 
+			else if(document.getElementsByName(square.toString())[0].id == "Wall"){
+				context.fillStyle="white";
+				context.fillRect(0,0,canvas.width,canvas.height);
+				canvas.id="Empty";
+			}
+		}
+	}
+	
+	function generateRandomStartAndEnd(){
+	
+		// generate random starting and ending point 
+		startSquare = Math.floor(Math.random()*288)+1;
+		
+		while(document.getElementsByName(startSquare.toString())[0].id !="Empty"){
+			startSquare = Math.floor(Math.random()*288)+1;
+		}
+		
+		endSquare = Math.floor(Math.random()*288)+1;
+		
+		while(document.getElementsByName(endSquare.toString())[0].id !="Empty"){
+			endSquare = Math.floor(Math.random()*288)+1;
+		}
+		
+		// set starting square to a wall node 
+		document.getElementsByName(startSquare.toString())[0].id == "Wall";
+	}
+	
+	function findPath(){
+		
+		if(!noPath){
+			generateRandomStartAndEnd();
+		}
+		
+		currentSquare = startSquare;
+		findPathEvent=true;
+		findPathBtn.disabled=true;
+
+		
+		setInterval(findNextSquare,125);
+		setInterval(updateScreen,10);
+	}
+	
+
+	function findNextSquare(){
+		
+		if(currentSquare !=endSquare){
+			
+			// check if square is trapped with nowhere to go
+			
+			squaresLeft=8;
+			
+			// check square to the upper left diagonal
+			if(document.getElementsByName((currentSquare -25).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square on top 
+			if(document.getElementsByName((currentSquare-24).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square to the upper right corner 
+			if(document.getElementsByName((currentSquare-23).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square to the left
+			if(document.getElementsByName((currentSquare-1).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square to the right
+			if(document.getElementsByName((currentSquare+1).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square to the lower left diagonal
+			if(document.getElementsByName((currentSquare+23).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square to the bottom
+			if(document.getElementsByName((currentSquare+24).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			// check square to the bottom right diagonal
+			if(document.getElementsByName((currentSquare+25).toString())[0].id !="Empty"){
+				squaresLeft--;
+			}
+			
+			if(squaresLeft <1){
+				
+				// reset all squares to non traversed 
+				for(name=1;name<=288;name++){
+					
+					canvas = document.getElementsByName(name.toString())[0];
+					
+					if(canvas.id == "Traversed"){
+						canvas.id="Empty";
+					}
+				
+				}
+				
+				noPath=true;
+				findPath();
+			}
+			
+			direction = Math.floor(Math.random()*8)+1;
+			
+			// move to the top left
+			if(direction == 1){
+				potentialSquare=currentSquare-25;
+			}
+			
+			// move upwards
+			else if(direction == 2){
+				potentialSquare=currentSquare-24;
+			}
+			
+			// move to the top right
+			else if(direction == 3){
+				potentialSquare=currentSquare-23;
+			}
+			
+			// move to the right 
+			else if(direction ==4){
+				potentialSquare=currentSquare-1;
+			}
+			
+			// move to the bottom right
+			else if(direction == 5){
+				potentialSquare=currentSquare+25;
+			}
+			
+			// move to the bottom
+			else if(direction == 6){
+				potentialSquare=currentSquare+24;
+			}
+			// move to the bottom left
+			else if(direction == 7){
+				potentialSquare=currentSquare+23;
+			}
+			
+			// move to the left
+			else if(direction == 8){
+				potentialSquare=currentSquare+1;
+			}
+			
+			if(document.getElementsByName(potentialSquare.toString())[0].id =="Empty"){
+			
+				currentSquare = potentialSquare;
+				
+				// change the new square 
+				document.getElementsByName(currentSquare.toString())[0].id="Traversed";
+			}
+		}
+		
+		else if(currentSquare == endSquare){
+			location.reload();
+		}
+	}
+	
+	function updateScreen(){
+		
+		for(name=1;name<=288;name++){
+			
+			canvas = document.getElementsByName(name.toString())[0];
+			context = canvas.getContext('2d');
+			context.fillStyle="white";
+			
+			// starting point
+			if(name == startSquare){
+				context.fillStyle="green";
+			}
+			
+			// ending point 
+			else if(name == endSquare){
+				context.fillStyle="red";
+			}
+			
+			// side walls
+			else if(canvas.id == "Wall"){
+				
+				context.fillStyle="grey";
+				
+			}
+			
+			// canvas that square is currently occupying
+			else if(canvas.id=="Traversed"){
+				context.fillStyle="blue";
+			}
+			
+			context.fillRect(0,0,canvas.width,canvas.height);
+		}
+		
+	}
+	
+	// start program 
+	window.onload=init;
+	
+ </script>
+</body>
+</html>
